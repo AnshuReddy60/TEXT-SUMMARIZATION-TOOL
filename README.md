@@ -53,4 +53,9 @@ The Text Summarization Tool leverages **Natural Language Processing (NLP)** tech
 
 This Text Summarization Tool is a practical solution for anyone looking to quickly summarize lengthy documents. The tool demonstrates how cutting-edge NLP techniques can be used to make information more accessible. It also reflects my learning and hands-on experience during my internship at CodTech, where I applied my skills in **Python**, **NLP**, and **web app development** to create a useful, real-world tool.
 
+## OUTPUT
+
+![Image](https://github.com/user-attachments/assets/6a631d4c-3955-4fd6-9579-0c97780f42b3)
+
+![Image](https://github.com/user-attachments/assets/b849312f-5bcc-418a-875e-1e3e85b62212)
 
