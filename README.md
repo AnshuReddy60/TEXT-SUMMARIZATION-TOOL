@@ -55,7 +55,7 @@ This Text Summarization Tool is a practical solution for anyone looking to quick
 
 ## OUTPUT
 
-![Image](https://github.com/user-attachments/assets/6a631d4c-3955-4fd6-9579-0c97780f42b3)
+![Image](https://github.com/user-attachments/assets/dba7ecf5-8612-4605-84b3-2ddd80518d82)
 
-![Image](https://github.com/user-attachments/assets/b849312f-5bcc-418a-875e-1e3e85b62212)
+![Image](https://github.com/user-attachments/assets/fbe032ac-6559-4be8-93a5-bada7f5f0ae0)
 
