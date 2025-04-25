@@ -14,44 +14,69 @@
 
 # DESCCRIPTION
 
-### 📄 Text Summarization Tool – Internship at CodTech
+This **Text Summarization Tool** is a web-based application developed using **Streamlit** and **Hugging Face's Transformers** library. The tool allows users to upload or paste long text and generate concise, meaningful summaries using advanced **Natural Language Processing (NLP)** techniques. It is ideal for anyone who needs to quickly summarize lengthy documents such as articles, research papers, and reports.
 
-This project is developed as part of my internship at **CodTech**, where I built a **Text Summarization Tool** using **Streamlit** and **Hugging Face Transformers**. The primary goal of this tool is to help users quickly generate concise summaries from long text, enhancing information consumption and helping users save time by condensing lengthy articles into key insights.
+### **Overview**
 
-The Text Summarization Tool leverages **Natural Language Processing (NLP)** techniques to automatically generate summaries. It is designed to be simple, intuitive, and fast, making it a useful application for professionals, researchers, and content creators who need to summarize articles, reports, or other text-heavy documents.
+The core of this application leverages **Hugging Face's pre-trained transformer models** like **BART** and **T5** for abstractive text summarization. These models are capable of understanding the context of input text and generating concise summaries that retain the key ideas. The tool is built with **Streamlit**, providing an intuitive, interactive interface for users.
 
-### **Key Features:**
+### **Key Features**
 
-- **Interactive UI**: Built with **Streamlit**, this tool provides an easy-to-use interface where users can paste their article and control the summary length dynamically.
-- **Text Summarization**: Using pre-trained **transformer models** (like BART and T5), the tool can perform **abstractive summarization** by understanding the context of the input text and generating meaningful, human-like summaries.
-- **Download Option**: Once the summary is generated, users have the option to download it as a `.txt` file, making it easy to save and share the results.
-- **Dynamic Length Control**: Users can control the length of the generated summary by adjusting the maximum token length, providing flexibility for various use cases.
+- **Text Input**: Users can paste their text directly into the application or upload a text file for summarization.
+- **Summary Length Control**: Users can control the maximum length of the summary (in tokens), adjusting the level of detail required.
+- **Abstractive Summarization**: The tool uses advanced transformer models to generate human-like summaries based on the input text.
+- **Downloadable Summary**: Once the summary is generated, users can download it as a **.txt** file for offline use.
+  
+### **How It Works**
 
-### **Implementation Details:**
+1. **Input Text**: Users paste the text or upload a file.
+2. **Set Summary Length**: Users specify the maximum summary length in tokens. The minimum length is automatically adjusted based on the maximum length.
+3. **Summarize**: After clicking "Summarize Now", the model processes the input and generates the summary.
+4. **Download Summary**: The generated summary can be downloaded as a **.txt** file.
 
-- **Streamlit**: The app is built using Streamlit to provide a web-based, user-friendly interface. Streamlit makes it easy to deploy the summarizer and allows for rapid prototyping, so users can interact with the model directly in their browser.
-- **Transformers Library**: The tool uses the **Hugging Face Transformers** library to load a pre-trained **summarization pipeline**. The pipeline is fine-tuned for text summarization tasks and performs efficiently on articles of varying lengths.
-- **Caching with `st.cache_resource`**: The summarization pipeline is cached using Streamlit's `@st.cache_resource` decorator, ensuring that the model is loaded only once during the app's session, leading to faster response times.
-- **Text Preprocessing**: The input text undergoes basic processing, including validation to ensure that the text is sufficiently long (at least 50 words) for summarization.
-- **Summary Length Control**: Users can set the maximum and minimum lengths for the generated summary. The tool adjusts the `min_length` dynamically based on the `max_length` to ensure that summaries are concise yet informative.
+### **Technologies Used**
 
-### **How It Works:**
+- **Streamlit**: An open-source app framework for building interactive applications with minimal code.
+- **Hugging Face Transformers**: A library for accessing pre-trained models like **BART** and **T5** for text generation tasks.
+- **Python**: The entire tool is built in Python, which is widely used in NLP and machine learning projects.
+- **io**: Used to generate downloadable summary files.
 
-1. **User Input**: Users paste their article or text into the provided input field.
-2. **Adjust Summary Length**: Users can adjust the desired summary length by selecting the maximum length (in tokens). The minimum length is automatically set to 50% of the maximum length.
-3. **Generate Summary**: Once the user clicks the "Summarize Now" button, the tool processes the input text, generates the summary using the transformer model, and displays the result.
-4. **Download Summary**: After the summary is displayed, users can download it as a `.txt` file.
+### **How to Run the Application**
 
-### **Technologies Used:**
+#### **1. Install Required Libraries**
 
-- **Streamlit**: For building the interactive user interface.
-- **Hugging Face Transformers**: For leveraging pre-trained models like BART and T5 for summarization.
-- **Python**: The entire application is built using Python for backend processing.
-- **io**: To generate downloadable summary files.
+To run the application, first install the required libraries by running the following command in your terminal or command prompt:
 
-### **Conclusion:**
+```bash
+pip install streamlit transformers torch
+```
 
-This Text Summarization Tool is a practical solution for anyone looking to quickly summarize lengthy documents. The tool demonstrates how cutting-edge NLP techniques can be used to make information more accessible. It also reflects my learning and hands-on experience during my internship at CodTech, where I applied my skills in **Python**, **NLP**, and **web app development** to create a useful, real-world tool.
+This will install **Streamlit** (for building the web interface), **Transformers** (for the pre-trained models), and **Torch** (for running the models).
+
+#### **2. Clone or Download the Project Files**
+
+You can either clone the repository or download the project files directly to your local machine. If you're using the file upload feature, make sure the project includes the necessary code to handle file inputs.
+
+#### **3. Run the Streamlit App**
+
+Once you have the dependencies installed and the files ready, run the following command to launch the app:
+
+```bash
+streamlit run text_summarization_app.py
+```
+
+This will start the Streamlit server and open the app in your default browser. If everything is set up correctly, you should see the **Text Summarization Tool** interface.
+
+#### **4. Use the Application**
+
+- Paste or upload a lengthy article or text into the provided input field.
+- Adjust the maximum summary length using the slider.
+- Click "Summarize Now" to generate the summary.
+- Download the summary as a **.txt** file using the download button.
+
+### **Conclusion**
+
+The **Text Summarization Tool** simplifies the task of condensing long-form content into concise summaries using state-of-the-art transformer models. Built with **Streamlit** and **Hugging Face**, this tool demonstrates the power of **abstractive summarization** in modern NLP applications. It is a great tool for content curators, researchers, and anyone who needs to process large amounts of text quickly and effectively.
 
 ## OUTPUT
 
